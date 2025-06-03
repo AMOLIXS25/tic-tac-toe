@@ -5,8 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tic-tac-toe</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./assets/images/icon-site.png">
 </head>
 <body>
-    <script src="./index.js"></script>
+    <dialog class="start-game-dialog">
+        <form action="" method="post">
+            <label for="pseudo">Pseudo</label>
+            <input id="pseudo-input" maxlength="10" />
+            <button type="submit">PLAY</button>
+        </form>
+    </dialog>
+    <dialog class="result-game-dialog">
+        <div class="result-game-dialog-container">
+            <div class="winner-player-container">
+                <div class="winner-player-sub-container"></div>
+            </div>
+            <p class="result-game-dialog-text"></p>
+            <button>REPLAY</button>
+        </div>
+    </dialog>
+    <header>
+        <h1>TIC <span class="tac-text-title">TAC</span> TOE</h1>
+    </header>
+    <main>
+        <section class="game">
+            <div class="game-container">
+                <div class="player-container">
+                    <div class="player-sub-container">
+                        <img class="player-avatar-picture" src="./assets/images/avatars/1.jpg" width="100" height="100" />
+                        <h3 id="player-pseudo">Amolixs 25</h3>
+                        <div class="player-role-container">
+                            x
+                        </div>
+                    </div>
+                </div>
+                <div class="game-board-container">
+                    <div class="game-board-sub-container">
+                    </div>
+                </div>
+                <div class="computer-container">
+                    <div class="computer-sub-container">
+                        <img class="player-avatar-picture" src="./assets/images/avatars/2.jpg" width="100" height="100" />
+                        <h3 class="computer-pseudo">#2135</h3>
+                        <div class="player-role-container">
+                            o
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="turn-container">
+                <p>YOUR TURN</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Made with ❤️ by AMOLIXS25</p>
+    </footer>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>

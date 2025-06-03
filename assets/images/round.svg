@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-circle">
+    <defs>
+        <filter id="f1" width="120" height="120">
+        <feOffset in="SourceGraphic" dx="20" dy="20" />
+        <feBlend in="SourceGraphic" in2="offOut" />
+        </filter>
+    </defs>
+    <circle cx="12" cy="12" r="10" filter="url(#f1)"></circle>
+</svg>
