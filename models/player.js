@@ -89,7 +89,7 @@ export const createComputerPlayer = (playerToBattle) => {
     }
 
     const generateRandomAvatarPicture = () => {
-        return `../assets/images/avatars/${Math.floor(Math.random() * 4) + 1}.jpg`;
+        return `/assets/images/avatars/${Math.floor(Math.random() * 4) + 1}.jpg`;
     }
 
     const { getAvatarPicture, getRole, getPseudo, setRole } = createPlayer(
