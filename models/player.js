@@ -1,4 +1,6 @@
 export const createPlayer = (role='x', pseudo='Anonyme', avatar_picture='../assets/images/avatars/2.jpg') => {
+    avatar_picture = `/assets/images/avatars/${Math.floor(Math.random() * 4) + 1}.jpg`;
+    
     const initializeGraphicsPlayer = () => {
         const playerContainer = document.querySelector('.player-container .player-sub-container');
         playerContainer.innerHTML = `
@@ -36,6 +38,10 @@ export const createPlayer = (role='x', pseudo='Anonyme', avatar_picture='../asse
         const playerContainer = document.querySelector('.player-container .player-sub-container');
         document.querySelector('.turn-container').innerHTML = '<p>IA TURN</p>';
         playerContainer.classList.remove('active');
+    }
+
+    const generateRandomAvatarPicture = () => {
+        return `/assets/images/avatars/${Math.floor(Math.random() * 4) + 1}.jpg`;
     }
 
     // const playAMove = (rowToPlayTheMove, columnToPlayTheMove) => {
